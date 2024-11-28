@@ -1,6 +1,6 @@
 // Datos de cada diapositiva (incluyendo el enlace para el botón)
 const slidesData = [
-    { title: "Buñuelo", subtitle: "Una delicia tradicional", buttonLink: "dulce.html" },
+    { title: "Buñuelo", subtitle: "Una delicia tradicional", buttonLink: "buñuelo.html" },
     { title: "Enyucado", subtitle: "Un buen postre", buttonLink: "enyucado.html" },
     { title: "Natilla", subtitle: "perfecto para el postre", buttonLink: "natilla.html" },
     { title: "Masamorra de maiz", subtitle: "Explosion de sabor", buttonLink: "masamorra de maiz.html" },

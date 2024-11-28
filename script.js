@@ -1,10 +1,10 @@
 // Datos de cada diapositiva (incluyendo el enlace para el botón)
 const slidesData = [
-    { title: "¡Dulce de Papaya!", subtitle: "Una delicia tradicional", buttonLink: "recetas/dulcePapaya.html" },
-    { title: "Arroz con Camarón", subtitle: "Perfecto para el almuerzo", buttonLink: "recetas/arrozCamarones.html" },
-    { title: "Panelitas", subtitle: "Un toque dulce y sabroso", buttonLink: "recetas/panelitas.html" },
-    { title: "Friche de Chivo", subtitle: "Friche preparado a la perfección", buttonLink: "recetas/friche.html" },
-    { title: "Sancocho", subtitle: "Un clásico de la comida colombiana", buttonLink: "recetas/sancocho.html" }
+    { title: "¡Dulce de Papaya!", subtitle: "Una delicia tradicional", buttonLink: "dulce.html" },
+    { title: "Arroz con Camarón", subtitle: "Perfecto para el almuerzo", buttonLink: "arroz de camarones.html" },
+    { title: "Panelitas", subtitle: "Un toque dulce y sabroso", buttonLink: "panelitas.html" },
+    { title: "Friche de Chivo", subtitle: "Friche preparado a la perfección", buttonLink: "friche.html" },
+    { title: "Sancocho", subtitle: "Un clásico de la comida colombiana", buttonLink: "sancocho.html" }
 ];
 
 const captionTitle = document.querySelector('.banner-title');
