@@ -1,0 +1,468 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF4E3;
+    color: #5D4037;
+    line-height: 1.6;
+}
+
+/* Header */
+/* Encabezado general */
+.header {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 21px;
+    background-color: #F2C572;
+    font-family: Arial, sans-serif;
+}
+
+/* Logo y eslogan */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    height: 99px;
+    width: auto;
+}
+
+.tagline {
+    font-size: 14px;
+    color: #5D4037;
+}
+
+/* Barra de búsqueda */
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el contenedor en su bloque */
+    position: relative; /* Establece el contenedor como relativo para colocar el botón en su interior */
+}
+
+.search-bar {
+    padding: 8px 10px;
+    border: 1px solid #C2C0BC;
+    border-radius: 10px;
+    background-color: #C2C0BC;
+    color: #5D4037;
+    font-size: 14px;
+    outline: none;
+    width: 433px;
+}
+
+.search-bar::placeholder {
+    color: #9E9E9E;
+}
+
+.search-btn {
+    background-color: #D96E30;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute; /* Hace que el botón se posicione sobre la barra de búsqueda */
+    left: 83%; /* Centra el botón horizontalmente */
+    transform: translateX(80%); /* Ajusta la posición del botón para que se quede centrado */
+    top: -1px; /* Mueve el botón encima de la barra de búsqueda */
+}
+
+.search-btn:hover {
+    background-color: #E64A19;
+}
+
+
+/* Íconos sociales */
+.social-container {
+    display: flex;
+    align-items: center; /* Centra verticalmente el texto y los iconos */
+    justify-content: center; /* Centra todo el contenido de la fila */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.social-text {
+    margin-right: 20px; /* Espacio entre el texto y los iconos */
+    font-size: 14px; /* Tamaño del texto */
+    color: #333; /* Color del texto */
+}
+
+.social-icon {
+    display: flex;
+    align-items: center; /* Centra verticalmente el icono y el texto */
+    font-size: 20px; /* Tamaño del texto */
+    color: #333; /* Color del texto */
+    margin: 0 10px; /* Espaciado entre los iconos y el texto */
+    text-decoration: none; /* Eliminar subrayado */
+    transition: color 0.3s;
+}
+
+.social-icon i {
+    font-size: 30px; /* Tamaño del icono */
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+
+.social-icon:hover {
+    color: #F16E3E; /* Color al pasar el ratón */
+}
+
+/* Banner */
+/* Estilos del carrusel */
+.carousel {
+    position: relative;
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 0px;
+    
+    
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    margin:  auto;
+    border-radius: 0;
+    margin-bottom: -9px;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 444px;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(245, 24, 24, 0.5);
+    color: rgb(133, 101, 13);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 45%;
+}
+
+.carousel-button.prev {
+    left: 10px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-button.next {
+    right: 10px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-button:hover {
+    background: rgba(236, 145, 7, 0.8);
+}
+
+.banner-overlay {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 45%;
+    left: 79%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+    padding: 90px 29px;
+    text-align: center;
+    border-radius: 16px;
+    width: 300px; /* Define un ancho fijo */
+    height: 300px; /* Define una altura fija */
+}
+
+.banner-overlay h1 {
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+.banner-overlay h5 {
+    margin-bottom: 10px; /* Baja el subtítulo */
+}
+
+.banner-button {
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #8C533E; /* Color personalizado */
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 70px;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Cambiar el color al pasar el cursor */
+.banner-button:hover {
+    background-color: #F16E3E;
+}
+
+
+
+/* Contenedor de categorías */
+.categories-container {
+    width: 95%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 0px;
+    border-radius: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 0;
+}
+
+/* Estilos para la sección de categorías */
+.categories {
+    text-align: center;
+    padding: 0%;
+    background-color: #F2C572;
+    font-family: Arial, sans-serif;
+    color: #5D4037;
+    border-radius: 0px;
+    margin-top: 0px;
+}
+
+.categories h2 {
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.category-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap; /* Permite que las categorías se ajusten en diferentes líneas si es necesario */
+}
+
+.category {
+    text-align: center;
+    display: inline-block;
+    width: 170px;
+}
+.category a {
+    text-decoration: none; /* Evitar subrayado */
+    color: inherit; /* Mantener el color del texto */
+}
+
+.category a:hover {
+    opacity: 0.8; /* Cambiar la opacidad al pasar el mouse */
+}
+/* Contenedor cuadrado */
+.image-container {
+    border-radius: 56px;
+    width: 135px;
+    height: 110px;
+    background-color: #FAE7C5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #D96E30;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.image-container img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+/* Texto dentro del contenedor */
+.image-container p {
+    margin: 5px 0 0;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+/* Efecto hover: contenedor, imagen y texto */
+.image-container:hover {
+    background-color: #655D4E; /* Cambia el color de fondo del contenedor */
+    border-color: #F5F5F5; /* Cambia el color del borde */
+}
+
+.image-container:hover img {
+    filter: brightness(0.8); /* Oscurece ligeramente la imagen */
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen */
+}
+
+.image-container:hover p {
+    color: #5D4037; /* Cambia el color del texto */
+}
+
+
+/* Recetas */
+/* Estilo global para el contenedor principal */
+.main-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Hacer que la columna de recetas ocupe más espacio */
+    gap: 100px;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-top: 20px;
+    max-width: 1200px;
+}
+
+
+/* Sección de recetas */
+.recipes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 recetas por fila */
+    row-gap: 50px;
+    column-gap: 100px;
+    align-items: start; /* Asegura que todo esté alineado al inicio */
+    height: auto;
+    width: 100%; /* Ocupa toda la columna asignada */
+}
+
+/* Cada receta individual */
+.recipe {
+    background-color: #F2C572;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Imagen de la receta */
+.recipe img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+/* Títulos y botón en las recetas */
+.recipe h3 {
+    font-size: 1.2rem;
+    color: #000000;
+    text-align: center;
+    margin: 0;
+}
+
+.recipe button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #8C533E;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.recipe button:hover {
+    background-color: #F16E3E;
+}
+.recipe a {
+    text-decoration: none; /* Elimina subrayado */
+    color: inherit; /* Mantiene el color del texto */
+}
+
+.recipe a button {
+    cursor: pointer; /* Hace que el cursor sea un puntero */
+}
+
+.recipe a:hover button {
+    opacity: 0.8; /* Cambia la opacidad cuando se pasa el ratón sobre el botón */
+}
+/* Sección de curiosidades (carousel) */
+.curiosity-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    background-color: #dbb05f; /* Fondo para mantener el diseño */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.curiosity-carousel {
+    position: relative;
+    height: 400px; /* Fija el tamaño del contenedor */
+}
+
+.curiosity-carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.curiosity-carousel-item.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.curiosity-carousel-item p {
+    font-size: 16px;
+}
+
+.curiosity-carousel-item img {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+
+
+
+
+.featured {
+    background: #F2C572;
+    padding: 20px;
+    margin: 18px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.featured h3 {
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 10px;
+    font-size: 18px;
+    
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #fd8d23;
+    font-size: 14px;
+}
